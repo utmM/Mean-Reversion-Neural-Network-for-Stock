@@ -1,2 +1,2 @@
 # MeanReversionAIforStockIndex
-An example for creating input data and training Neural Network for predicting an stock index
+An example for processing input data from a stock index, using the data, training Neural Network to predict the direction of the index

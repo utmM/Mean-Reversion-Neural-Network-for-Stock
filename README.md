@@ -1,12 +1,15 @@
 # MeanReversionNeuralNetowrkPredictingStockIndex
-An example of processing input data from row data of stock index. This repo explains a way of predicting stock price direction by a Neural Network machine larning. Additionally, also shows some application to develop iOS App through AWS cloud.
 
 ■ Abstruct ■
-  ... making ...
+
+An example of processing input data from row data of stock index. 
+Then explains a way of predicting the direction of stock price by a simple Neural Network.
+Additionally, shows some applications to develop an iOS App through the AWS cloud.
 
 ■ Contents ■
+
   1. Data Proccesing
-  2. Custamize tha input data and Machine Larning
+  2. Enphasize the inputs and Machine Learning
   3. Prediction and Interpretation
   4. AWS and iOS Application
 
@@ -26,6 +29,11 @@ An example of processing input data from row data of stock index. This repo expl
 
 
 ... making ...
-■ 2.
-■ 3.
-■ 4.
+■ 2.Enphasize the input and Machine Learning
+ Interpretation of both input and output play an essencial role for the simple Neural Network. To make the neural network understood the meaning, some data custamization such as enphasis or leveling is needed before the machine learning.
+ Also, Tuning and Adjustment the range of correct answer for prediction is important.
+■ 3. ... making ...
+■ 4. ... making ...
+
+■ Conclusion ■... making ...
+ 

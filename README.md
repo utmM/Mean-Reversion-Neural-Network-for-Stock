@@ -7,8 +7,8 @@ Additionally, shows some applications to develop an iOS App through the AWS clou
 ■ Contents ■
 
   1. Data Proccesing
-  2. Enphasize the inputs and Machine Learning
-  3. Prediction and Interpretation
+  2. Enphasis the meaning of inputs and Machine Learning
+  3. Prediction and output interpretation
   4. AWS and iOS Application
 
 ■ 1. Data Proccesing

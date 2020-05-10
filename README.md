@@ -1,5 +1,5 @@
 # MeanReversionNeuralNetowrkPredictingStockIndex
-An example of processing input data from a stock index and of training Neural Network to predict the direction of the index. Additionally, this repo shows some application to AWS cloud and iOS App.
+An example of processing input data from row data of stock index. This repo explains a way of predicting stock price direction by a Neural Network machine larning. Additionally, also shows some application to develop iOS App through AWS cloud.
 
 ■ Abstruct ■
   ... making ...

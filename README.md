@@ -27,9 +27,10 @@ Additionally, shows some applications to develop an iOS App through the AWS clou
 
 
 ... making ...
-■ 2.Enphasize the input and Machine Learning
- Interpretation of both input and output play an essencial role for the simple Neural Network. To make the neural network understood the meaning, some data custamization such as enphasis or leveling is needed before the machine learning.
- Also, Tuning and Adjustment the range of correct answer for prediction is important.
+■ 2.Enphasis the meaning of inputs and Machine Learning
+ Interpretation of both input and output data play an essencial role for the simple Neural Network. To make the neural network understood the meaning of a data sequence, some data custamization such as enphasis or leveling is needed before the machine learning.
+ Also, tuning and adjustment of the range which is the correct answer or not for prediction is important.
+
 ■ 3. ... making ...
 ■ 4. ... making ...
 

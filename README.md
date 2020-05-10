@@ -1,7 +1,5 @@
 # MeanReversionNeuralNetowrkPredictingStockIndex
 
-■ Abstruct ■
-
 An example of processing input data from row data of stock index. 
 Then explains a way of predicting the direction of stock price by a simple Neural Network.
 Additionally, shows some applications to develop an iOS App through the AWS cloud.

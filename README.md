@@ -61,7 +61,7 @@ Additionally, shows some applications to develop an iOS App through the AWS clou
 
  (Why need the adjustments?)
  
-    The row accelaration data has large variation or deviation, so the NN can't read the meaning of the time series. Before training, emphasize the trend and make it easy to understand for the NN.
+ The row accelaration data has large variation or deviation, so the NN can't read the meaning of the time series. Before training, emphasize the trend and make it easy to understand for the NN.
  
  (About the Machine Learning)
  

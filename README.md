@@ -1,17 +1,12 @@
 # MeanReversionNeuralNetowrkForStock
 
-        The AI's theme is "Mean Reversion"
-        The Neural Network structure is very simple 
+        The AI's theme is "Mean Reversion" on stock price
         Data processing before and after the machine learning are important
+        because the Neural Network structure is very simple 
 
-"Mean Reversion", or Moving Average Analysis is the most popular way of predicting stock prices.
-Things retruns to its average.
+"Mean Reversion", or Moving Average Analysis is the most popular way of predicting stock prices. Things retruns to its average. 
 
-Using the simple structure of the neural network, the divergence rates sequence from moving average curve gives a prediction of up/down direction about stock price.
-
-The neural network structure modeled by tensorfllow is simple and audinally one.
-
-As is usual, data pre-processing or preparation play the most important part on machine learning.
+Using the simple structure of the neural network, the divergence rates sequence from moving average curve gives a prediction of up/down direction about stock price. The neural network structure modeled by tensorfllow is simple and audinally one. As is usual, data pre-processing or preparation play the most important part on machine learning.
 This repo focuses on showing an example of processing input data from row stock price and of an interpretation about the output.
 
 Also explains about predicting by the Simple Neural Network.

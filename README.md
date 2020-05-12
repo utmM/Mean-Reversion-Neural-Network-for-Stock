@@ -30,7 +30,7 @@ Additionally, shows some applications to develop an iOS App through the AWS clou
 
   (Explanation)
   
-   Algo in "ratio.py" finds maximum poles and minimum poles on the moving average(curve). From them, it decides "peaks and bottoms" of the price during the terms. Then, it generates accelarations (UP_RATIOs) from each peak and bottom. The accelaration means the speeds of differences from the peaks and bottoms. The input data for the neural network consits of 25 days' differences of stock prices from moving average and the accelaration at the day, as the example (ex_input.csv) shows.
+   Algo in "ratio.py" finds maximum poles and minimum poles on the moving average (curve). From them, it decides "peaks and bottoms" of the price during the terms. Then, it generates accelarations (UP_RATIOs) from each peak and bottom. The accelaration means the speeds of differences from the peaks and bottoms. The input data for the neural network consits of 25 days' differences of stock prices from moving average and the accelaration at the day, as the example (ex_input.csv) shows.
    
   (! Disclaimer)
   

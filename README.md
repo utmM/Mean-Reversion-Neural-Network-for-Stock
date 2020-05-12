@@ -1,4 +1,4 @@
-# MeanReversionNeuralNetowrkForStock
+# MeanReversionNeuralNetowrkForStockPrediction
 
      The AI's theme is "Mean Reversion" on stock price
      Data processing before and after the machine learning are important

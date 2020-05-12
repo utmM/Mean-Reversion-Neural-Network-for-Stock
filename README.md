@@ -77,7 +77,7 @@ Additionally, shows some applications to develop an iOS App through the AWS clou
  
      A. -cd to the folder including nn_stock.py, input.csv
      B. -python nn_stock.py
-     C. adjusting ERROR_RANGE based on the interpretation of prediction as the way section 3 shows.
+     Adjust the ERROR_RANGE with try and error, based on the interpretation of prediction as the way section 3 shows.
 
 ■ 3. Prediction and output interpretation ■
 ■ 4. AWS and iOS Application (OverView) ■

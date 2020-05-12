@@ -15,24 +15,26 @@ Additionally, shows some applications to develop an iOS App through the AWS clou
 
 ■ Contents ■
 
-  1. Data Proccesing
-  2. Emphasize meaning of inputs and Machine Learning
-  3. Prediction and output interpretation
-  4. AWS and iOS Application (OverView)
+      1. Data Proccesing
+      2. Emphasize meaning of inputs and Machine Learning
+      3. Prediction and output interpretation
+      4. AWS and iOS Application (OverView)
 
 ■ 1. Data Proccesing
 
   First, we develop the input data. The file "ratio.py" generates the input for the neural network.
 
   (Command)
-  A. Move the foloder (using -cd command etc.) including ratio.py and row data. (Raw data example is 
-  in the repo named ex_N225_index.csv)
-  B. Run by -python command. (On terminal, "python ratio.py")
+  
+      A. Move the foloder (using -cd command etc.) including ratio.py and row data. (Raw data example is in the repo named ex_N225_index.csv)
+      B. Run by -python command. (On terminal, "python ratio.py")
 
   (Explanation)
+  
    Algo in "ratio.py" finds maximum poles and minimum poles on the moving average(curve). From them, it decides "peaks and bottoms" of the price during the terms. Then, it generates accelarations (UP_RATIOs) from each peak and bottom. The accelaration means the speeds of differences from the peaks and bottoms. The input data for the neural network consits of 25 days' differences of stock prices from moving average and the accelaration at the day, as the example (ex_input.csv) shows.
    
   (! Disclaimer)
+  
    The output(the input for neural network) possibly includes exceptions. Because of the "peaks and bottoms" are difined by artificiallly, mechanically, or judged by the algolism bellow shows for proccesing such a  big data in a short time, cases are that, there possibly includes some exceptions, which doesn't seems to be the peaks or bottoms in the term.
 
 ■ 2.Emphasize the meaning of inputs and Machine Learning
@@ -58,20 +60,25 @@ Additionally, shows some applications to develop an iOS App through the AWS clou
     (Named the input as "input.csv".)
 
  (Why need the adjustments?)
+ 
     The row accelaration data has large variation or deviation, so the NN can't read the meaning of the time series. Before training, emphasize the trend and make it easy to understand for the NN.
  
  (About the Machine Learning)
+ 
   Trained by the 80% of the input data as the teacher data (rest of the 20% are for the test), the simple neural network gives a prediction of stock direction (acceralation) inputted by 25 days' differences of current prices.
    
-  (★★Tuning and adjustment of ERROR_RANGE)
+  (★★ Tuning and adjustment of ERROR_RANGE)
+  
   Set the ERROR_RANGE judging the correct answer or not for yourself.
   ! This is up to the users and set the ERROR_RANGE one by one with try and error based on the interpretation of the prediction as the way section 3 shows.
    
    (Command)
+   
  After adjusting accelaration (:Step 1~3) and setting of the error range, enter the command:
- A. -cd to the folder including (nn_stock.py, input.csv)
- B. python nn_stock.py
- C. adjusting ERROR_RANGE based on the interpretation of prediction as the way section 3 shows.
+ 
+     A. -cd to the folder including (nn_stock.py, input.csv)
+     B. python nn_stock.py
+     C. adjusting ERROR_RANGE based on the interpretation of prediction as the way section 3 shows.
 
 ■ 3. Prediction and output interpretation
 ■ 4. AWS and iOS Application (OverView)

@@ -7,7 +7,7 @@ Using the simple structure of the neural network, the divergence rates sequence 
 
 The neural network structure modeled by tensorfllow is simple and audinally one.
 
-As is usual, data processing plays the most important part on machine learning.
+As is usual, data pre-processing or preparetion play the most important part on machine learning.
 This repo focuses on showing an example of processing input data from row stock price and of an interpretation about the output.
 
 Also explains about predicting by the Simple Neural Network.

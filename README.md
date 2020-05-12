@@ -41,6 +41,7 @@ Additionally, shows some applications to develop an iOS App through the AWS clou
    Translation of both input and output data is essencial for the simple NN. 
  
  (★ Emphasize ★)
+ 
     Before running this code, you need to adjust of the input data to "Emphasize" the meaning of the time series.
     "UP_RATIO (Accelaration)" is, to be adjusted in the 3 steps bellow.
     

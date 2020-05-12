@@ -6,7 +6,7 @@
 
 "Mean Reversion", or Moving Average Analysis is the most popular way of predicting stock prices. Things retruns to its average. 
 
-Using the simple structure of the Neural Network (NN), the divergence rates sequence from moving average curve gives a prediction of up/down direction about stock price. The NN structure modeled by tensorfllow is simple and audinally one. As is usual, data pre-processing or preparation play the most important part on machine learning.
+Using the simple structure of the Neural Network (NN), the divergence rates sequence from moving average curve gives a prediction of up/down direction about stock price. This project is tested by Nikkei225 index. The NN structure modeled by tensorfllow is simple and audinally one. As is usual, data pre-processing or preparation play the most important part on machine learning.
 This repo focuses on showing an example of processing input data from row stock price and of an interpretation about the output.
 
 Also explains about predicting by the Simple NN.
@@ -22,10 +22,11 @@ Additionally, shows some applications to develop an iOS App through the AWS clou
 ■ 1. Data Proccesing ■
 
   First, we develop the input data. The file "ratio.py" generates the input for the NN.
+  Raw data example is in the repo named "ex_N225_index.csv". This project has tested by Nikkei225 index's close price, but another stock prices or indices can be applied for.
 
   (Command)
   
-      A. Move the foloder (using -cd command etc.) including ratio.py and row data. (Raw data example is in the repo named ex_N225_index.csv)
+      A. Move the foloder (using -cd command etc.) including ratio.py and row data. 
       B. Run by -python command. (On terminal, "-python ratio.py")
 
   (Explanation)
@@ -38,10 +39,10 @@ Additionally, shows some applications to develop an iOS App through the AWS clou
 
 ■ 2. Emphasize the meaning of inputs and Machine Learning ■
 
-  Interpretation of both input and output data is essencial for the simple NN. 
+   Translation of both input and output data is essencial for the simple NN. 
  
  (★ Emphasize ★)
- Before running this code, you need to adjust of the input data to "Emphasize" the meaning of the time series.
+    Before running this code, you need to adjust of the input data to "Emphasize" the meaning of the time series.
     "UP_RATIO (Accelaration)" is, to be adjusted in the 3 steps bellow.
     
       Step 1.
@@ -53,18 +54,24 @@ Additionally, shows some applications to develop an iOS App through the AWS clou
       Step3.
       Normalize the accelarations by its maximum and minimum during all the term.
     
- The NN uses "the adjusted accelarations" together with 25 differencials as a input.
-    Please renew the "input.csv" by "adjudted" UP_RATIO (accelaration).
-    -> A line consists of 25 differencials and "adjusted" accelaration.
-    (Named the input as "input.csv".)
+   The NN uses "the adjusted accelarations" together with 25 differencials as a input.
+   Please renew the "input.csv" by "adjudted" UP_RATIO (accelaration).
+   -> A line consists of 25 differencials and "adjusted" accelaration.
+   (Named the input as "input.csv".)
 
  (Why need the adjustments?)
  
- The row accelaration data has large variation or deviation, so the NN can't read the meaning of the time series. Before training, emphasize the trend and make it easy to understand for the NN.
+   The row accelaration data has large variation or deviation, so the NN can't read the meaning of the time series. Before training, emphasize the trend and make it easy to understand for the NN.
  
- (About the Machine Learning)
+ (Machine Learning)
  
-  Trained by the 80% of the input data as the teacher data (rest of the 20% are for the test), the simple NN gives a prediction of stock direction (acceralation) inputted by 25 days' differences of current prices.
+   Trained by the 80% of the input data as the teacher data (rest of the 20% are for the test), the simple NN gives a prediction of stock direction (acceralation) inputted by 25 days' differences of current prices.
+  
+  (NN Structure)
+  
+     ・Input layer(25 nodes) -- Medium layer (25) -- Output layer (1)
+     ・Active function of the Medium is sigmoid, that of the Output is tanh
+     ・Loss function is squared error
    
   (★★ Tuning and adjustment of ERROR_RANGE ★★)
   
@@ -73,14 +80,21 @@ Additionally, shows some applications to develop an iOS App through the AWS clou
    
    (Command)
    
- After adjusting accelaration (:Step 1~3) and setting of the error range, enter the command:
+  After adjusting accelaration (:Step 1~3) and setting of the error range, enter the command:
  
       A. -cd to the folder including nn_stock.py, input.csv
       B. -python nn_stock.py
       Adjust the ERROR_RANGE with try and error, based on the interpretation of prediction as the way section 3 shows.
 
 ■ 3. Prediction and output interpretation ■
-
+    Load the model and predict the accelaration by the real stock prices.
+    Prepare the market data in real. The input needs 25 close stock prices (index prices). 25 differencials form the moving average will be generated by the code. The model uses 25 differencials as input and produce 1 prediction data (accelaration). The accelaration is the direction of the stock price.
+   
+(Interpretation of the predictions)
+   
+   The predicted accelarations has large variation or deviation, similar to the input data, so you need to get moving average of the prediction time series to get smoother the outputs. Getting average or leveling predictions is like interpretation or translation of machine language to human's to understand the deviation or angiguity of the outcome generated by AI.
+    
+   As you read, the data emphasis and data leveling are more important than to create more complicated neural network models.
 
 ■ 4. AWS and iOS Application (OverView) ■
 

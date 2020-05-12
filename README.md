@@ -18,7 +18,7 @@ Additionally, shows some applications to develop an iOS App through the AWS clou
   1. Data Proccesing
   2. Emphasize meaning of inputs and Machine Learning
   3. Prediction and output interpretation
-  4. AWS and iOS Application
+  4. AWS and iOS Application (OverView)
 
 ■ 1. Data Proccesing
 
@@ -40,38 +40,39 @@ Additionally, shows some applications to develop an iOS App through the AWS clou
  Interpretation of both input and output data is essencial for the simple NN. 
  
  (★Emphasize)
- Before running this code, you need to adjust of the input data to Emphasize the meaning of the time series.
-    "UP_RATIO (Accelaration)" is, to be adjusted in the 2 steps bellow.
+ Before running this code, you need to adjust of the input data to "Emphasize" the meaning of the time series.
+    "UP_RATIO (Accelaration)" is, to be adjusted in the 3 steps bellow.
     
     Step 1.
     Adopt the accelaration which gives the maximum absolete during past 5 days.
     
     Step 2.
-    On Step 1. accelaratons, adopt the one which has the maximum absolete during 5 days, from 2 days before to 2 days past, including the day.
+    On Step 1. accelaratons, adopt the one gives the maximum absolete during 5 days, from 2 days before to 2 days past, including the day.
     
     Step3.
     Normalize the accelarations by its maximum and minimum during all the term.
     
- The NN uses the adjusted accelarations together with 25 differencials as input.
-    Please renew the "input.csv" by adjudted UP_RATIO (accelaration)
-    -> A line consists of 25 differencials and adjusted accelaration.
-    Renamed the input as ./input.csv
+ The NN uses "the adjusted accelarations" together with 25 differencials as a input.
+    Please renew the "input.csv" by "adjudted" UP_RATIO (accelaration)
+    -> A line consists of 25 differencials and "adjusted" accelaration.
+    (Named the input as "input.csv".)
 
  (Why need the adjustments?)
-    The row accelaration data has large variation or deviation so the NN can't read the meaning of the time series. Before input, emphasize the trend, make it easy to understand for the NN.
+    The row accelaration data has large variation or deviation, so the NN can't read the meaning of the time series. Before training, emphasize the trend and make it easy to understand for the NN.
  
- (Machine Learning)
-  Trained by the 80% of the input data as teacher data (rest 20% are for the test data), the simple neural network gives a prediction of stock direction (acceralation).
-   25 days' differences of current prices as the input for the NN gives 1 predicted accelaration.
+ (About the Machine Learning)
+  Trained by the 80% of the input data as the teacher data (rest of the 20% are for the test), the simple neural network gives a prediction of stock direction (acceralation) inputted by 25 days' differences of current prices.
    
-   Tuning and adjustment of the range which is the correct answer or not for prediction is important.
-   (This is up to the users)
+  (★★Tuning and adjustment of ERROR_RANGE)
+  Set the ERROR_RANGE judging the correct answer or not for yourself.
+  ! This is up to the users and set the ERROR_RANGE one by one with try and error based on the interpretation of the prediction as the way section 3 shows.
    
    (Command)
  After adjusting accelaration (:Step 1~3) and setting of the error range, enter the command:
  A. -cd to the folder including (nn_stock.py, input.csv)
  B. python nn_stock.py
+ C. adjusting ERROR_RANGE based on the interpretation of prediction as the way section 3 shows.
 
 ■ 3. Prediction and output interpretation
-■ 4. AWS and iOS Application
+■ 4. AWS and iOS Application (OverView)
 

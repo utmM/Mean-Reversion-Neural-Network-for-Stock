@@ -1,7 +1,7 @@
 # MeanReversionNeuralNetowrkPredictingStockIndex
 
 "Mean Reversion", or Moving Average Analysis is the most popular way of predicting stock prices.
-Things retruns to its medium.
+Things retruns to its average.
 
 Using the simple structure of the neural network, the divergence rates sequence from moving average curve gives a prediction of up/down direction about stock price.
 

@@ -20,7 +20,7 @@ Additionally, shows some applications to develop an iOS App through the AWS clou
       3. Prediction and output interpretation
       4. AWS and iOS Application (OverView)
 
-■ 1. Data Proccesing
+■ 1. Data Proccesing ■
 
   First, we develop the input data. The file "ratio.py" generates the input for the neural network.
 
@@ -37,11 +37,11 @@ Additionally, shows some applications to develop an iOS App through the AWS clou
   
    The output(the input for neural network) possibly includes exceptions. Because of the "peaks and bottoms" are difined by artificiallly, mechanically, or judged by the algolism bellow shows for proccesing such a  big data in a short time, cases are that, there possibly includes some exceptions, which doesn't seems to be the peaks or bottoms in the term.
 
-■ 2.Emphasize the meaning of inputs and Machine Learning
+■ 2.Emphasize the meaning of inputs and Machine Learning ■
 
  Interpretation of both input and output data is essencial for the simple NN. 
  
- (★Emphasize)
+ (★ Emphasize ★)
  Before running this code, you need to adjust of the input data to "Emphasize" the meaning of the time series.
     "UP_RATIO (Accelaration)" is, to be adjusted in the 3 steps bellow.
     
@@ -67,7 +67,7 @@ Additionally, shows some applications to develop an iOS App through the AWS clou
  
   Trained by the 80% of the input data as the teacher data (rest of the 20% are for the test), the simple neural network gives a prediction of stock direction (acceralation) inputted by 25 days' differences of current prices.
    
-  (★★ Tuning and adjustment of ERROR_RANGE)
+  (★★ Tuning and adjustment of ERROR_RANGE ★★)
   
   Set the ERROR_RANGE judging the correct answer or not for yourself.
   ! This is up to the users and set the ERROR_RANGE one by one with try and error based on the interpretation of the prediction as the way section 3 shows.
@@ -80,6 +80,6 @@ Additionally, shows some applications to develop an iOS App through the AWS clou
      B. python nn_stock.py
      C. adjusting ERROR_RANGE based on the interpretation of prediction as the way section 3 shows.
 
-■ 3. Prediction and output interpretation
-■ 4. AWS and iOS Application (OverView)
+■ 3. Prediction and output interpretation ■
+■ 4. AWS and iOS Application (OverView) ■
 

@@ -76,7 +76,7 @@ Additionally, shows some applications to develop an iOS App through the AWS clou
    
  After adjusting accelaration (:Step 1~3) and setting of the error range, enter the command:
  
-     A. -cd to the folder including (nn_stock.py, input.csv)
+     A. -cd to the folder including nn_stock.py, input.csv
      B. -python nn_stock.py
      C. adjusting ERROR_RANGE based on the interpretation of prediction as the way section 3 shows.
 

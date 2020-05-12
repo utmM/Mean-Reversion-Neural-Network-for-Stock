@@ -44,14 +44,14 @@ Additionally, shows some applications to develop an iOS App through the AWS clou
  Before running this code, you need to adjust of the input data to "Emphasize" the meaning of the time series.
     "UP_RATIO (Accelaration)" is, to be adjusted in the 3 steps bellow.
     
-    Step 1.
-    Adopt the accelaration which gives the maximum absolete during past 5 days.
+      Step 1.
+      Adopt the accelaration which gives the maximum absolete during past 5 days.
     
-    Step 2.
-    On Step 1. accelaratons, adopt the one gives the maximum absolete during 5 days, from 2 days before to 2 days past, including the day.
+      Step 2.
+      On Step 1. accelaratons, adopt the one gives the maximum absolete during 5 days, from 2 days before to 2 days past, including the day.
     
-    Step3.
-    Normalize the accelarations by its maximum and minimum during all the term.
+      Step3.
+      Normalize the accelarations by its maximum and minimum during all the term.
     
  The NN uses "the adjusted accelarations" together with 25 differencials as a input.
     Please renew the "input.csv" by "adjudted" UP_RATIO (accelaration).

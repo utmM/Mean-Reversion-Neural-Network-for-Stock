@@ -96,7 +96,7 @@ Additionally, shows some applications to develop an iOS App through the AWS clou
    (Command)
 
      A. -cd to the folder including "nn_stock.py", "N225_index.csv", and traind model: "model", "model.meta", "checkpoint".
-     B. -python "nn_stock.py"
+     B. -python nn_stock.py
      
    (★★★ Interpretation of the predictions ★★★)
    

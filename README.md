@@ -1,7 +1,7 @@
 # MeanReversionNeuralNetowrkForStockPrediction
 
-     ・The AI's theme is "Mean Reversion" on stock price.
-     ・Data processing before and after the machine learning are important.
+     ・"Mean Reversion" on stock price.
+     ・Fucuses on Data Processing before & after the machine learning
      ・The Neural Network structure itself is very simple.
 
 "Mean Reversion", or Moving Average Analysis is the most popular way of predicting stock prices. Things retruns to its average. 

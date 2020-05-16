@@ -1,4 +1,4 @@
-# MeanReversionNeuralNetowrkForStockPrediction
+# Mean-Reversion-Neural-Netowrk-For-Stock-Prediction
 
      ・Theme: "Mean Reversion" on stock price
      ・Focuses on Data Processing before & after the machine learning
